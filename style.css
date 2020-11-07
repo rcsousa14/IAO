@@ -1,0 +1,126 @@
+:root{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    width: 0.35rem;
+}
+body::-webkit-scrollbar-track{
+  background: #1e1e24;  
+}
+body::-webkit-scrollbar-thumb{
+    background: #8d8d8d;
+}
+main{
+    margin-left: 7.5rem;
+    margin-right: 0.6rem;
+    padding: 1rem;
+    
+}
+.navbar{
+   
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: 200ms ease-in;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.nav-item{
+    width:100%;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    color: var(--text-primary);
+    text-decoration:none;
+    filter: grayscale(100%) opacity(0.7); 
+    transition: var(--transition-speed); 
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    
+}
+.link-text{
+    display: none;
+    margin-left: 2rem;
+}
+.logo .link-text {
+    display: block;
+    margin-left: 1rem;
+}
+
+.nav-link svg{
+   min-width: 3rem;
+   margin: 0 1.5rem; 
+}
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 2rem;
+    letter-spacing: 0.3ch;
+    width: 100%; 
+}
+/* small screens */
+@media only screen and (max-width: 600px){
+     .navbar{
+         bottom:0;
+         width: 100vw;
+         height: 5rem;
+     }
+     .navbar-nav{
+        flex-direction: row;
+        
+     }
+     /* .nav-item{
+         height: 100%;
+     } */
+     .nav-link{
+         justify-content: center;
+         
+     } 
+     
+     main{
+         margin: 0;
+     }
+     .nav-link svg{
+        min-width: 3rem;
+        min-height: 1.5rem;
+        margin-bottom: 1.5rem;
+        
+     }
+}
+
+/* large screens */
+@media only screen and (min-width: 600px){
+    .navbar{
+        width: 6.5rem;
+        height: 100vh;
+        top: 0;
+    }
+
+     
+}
