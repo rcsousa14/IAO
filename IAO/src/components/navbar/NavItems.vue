@@ -12,15 +12,13 @@
 </template>
 
 <script>
-import Tutorial from "~/assets/svgs/tutorial.svg"
+
 export default {
     
-    components:{
-      Tutorial
-    },
+    
     props:{
       to:{
-        required: true,
+        // required: true,
         type: String
       },
       navText:{
