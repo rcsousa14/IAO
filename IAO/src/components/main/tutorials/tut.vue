@@ -7,7 +7,7 @@
     >
       <div class="card">
         <g-link :to="edge.node.path">
-          <img src="https://source.unsplash.com/random" alt="W3Schools.com" />
+          <img :src="edge.node.featuredImage" alt="W3Schools.com" />
         </g-link>
         
         <div class="card-body">
@@ -45,6 +45,7 @@
           read
           date
           path
+          featuredImage
           tags{
             id
             color

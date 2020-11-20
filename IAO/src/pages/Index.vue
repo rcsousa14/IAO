@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Thumbnail />
-   <hr class="separator" />
+  
         <h1 class="title">Recente</h1>
   
   <Tutorials />

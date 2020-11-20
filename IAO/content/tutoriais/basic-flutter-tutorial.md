@@ -1,5 +1,6 @@
 ---
 title: basic flutter tutorial
+featuredImage: /uploads/tutoriais/t-layout.png
 read: 13MIN
 date: 10/10/2014
 author: Ruben Sousa
