@@ -13,6 +13,39 @@ module.exports = {
             .use('vue-svg-loader')
             .loader('vue-svg-loader')
     },
-    plugins: [],
+    plugins: [{
+            use: '@gridsome/vue-remark',
+            options: {
+                typeName: 'Documentation',
+                baseDir: './content/tutoriais',
+                pathPrefix: '/tutoriais',
+                template: './src/templates/Tutorial.vue',
+                refs: {
+                    tags: 'Tags',
+                }
+
+
+            }
+        },
+        {
+            use: '@gridsome/vue-remark',
+            options: {
+                typeName: 'Tags',
+                baseDir: './content/tags',
+                pathPrefix: '/tags',
+                template: './src/templates/Tags.vue'
+            }
+        },
+        {
+            use: '@gridsome/vue-remark',
+            options: {
+                typeName: 'Trecho',
+                baseDir: './content/trecho',
+                pathPrefix: '/trecho',
+                template: './src/templates/Tutorial.vue'
+            }
+        }
+
+    ],
 
 };

@@ -2,10 +2,10 @@
   <nav class="navbar">
       <ul class="navbar-nav">
         <Logo />
-        <NavItems nav-text="Tutoriais" to="/about">
+        <NavItems nav-text="Tutoriais" to="/tutoriais">
           <Tutorial />
         </NavItems>
-        <NavItems nav-text="Snippets" to="/snippet">
+        <NavItems nav-text="Snippets" to="/trechos">
           <Code />
         </NavItems>
         <NavItems nav-text="Hastags" to="/tags">
@@ -27,7 +27,7 @@ import NavItems from "~/components/navbar/NavItems.vue";
 import Tutorial from "~/assets/svgs/tutorial.svg";
 import Tags from "~/assets/svgs/tags.svg";
 import Search from "~/assets/svgs/search.svg";
-import Code from "~/assets/svgs/programing.svg";
+import Code from "~/assets/svgs/snippets.svg";
 import Theme from "~/assets/svgs/theme.svg";
 import NavSearch from "~/components/navbar/Search.vue"
 export default {

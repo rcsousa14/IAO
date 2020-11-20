@@ -1,8 +1,9 @@
 <template>
   <li class="nav-item">
     <g-link :to="to" class="nav-link">
-       <slot/>
+       <slot/> 
       <span class="link-text">{{navText}}</span>
+      
     </g-link>
     
     

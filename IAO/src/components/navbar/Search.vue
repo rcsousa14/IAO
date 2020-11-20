@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item">
-    <div v-on:mouseover="expandSearch" class="search-btn nav-link">
+    <div @mouseover="expandSearch" class="search-btn nav-link">
       <slot />
       <span class="link-text">{{ navText }}</span>
     </div>
